@@ -1,0 +1,161 @@
+:root {
+    --guava-pink: #FF6B6B;
+    --lizard-green: #4ECDC4;
+    --sand-tan: #F7D794;
+    --sand-orange: #F3A683;
+    --tropical-dark: #2F3542;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'cursive', sans-serif;
+    background-color: var(--sand-tan);
+    color: var(--tropical-dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--lizard-green);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 5px solid var(--guava-pink);
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+nav {
+    background-color: var(--guava-pink);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: var(--tropical-dark);
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2 {
+    color: var(--guava-pink);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 3px solid var(--sand-orange);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: var(--guava-pink);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-placeholder, .image-placeholder {
+    background-color: #eee;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--tropical-dark);
+    color: var(--white);
+    margin-top: 3rem;
+}
+
+/* Character Specific Styles */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.character-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 1rem auto;
+    border: 5px solid var(--lizard-green);
+}
+
+.character-card {
+    text-align: center;
+}
+
+/* Inspiration Page */
+.bio-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 10px solid var(--guava-pink);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        margin: 0.5rem;
+    }
+}
