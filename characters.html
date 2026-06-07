@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Characters - Guava Bob's Grande Adventures</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .character-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .character-card.featured {
+            grid-column: 1 / -1;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        @media (max-width: 600px) {
+            .character-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,8 +40,8 @@
     <main>
         <h1>Meet the Familia!</h1>
         <div class="character-grid">
-            <!-- Bob -->
-            <div class="character-card card">
+            <!-- Bob (Top) -->
+            <div class="character-card card featured">
                 <img src="images/characters/GuavaBobInTree.png" alt="Bob">
                 <div class="card-content">
                     <h3>Bob</h3>
@@ -32,25 +49,7 @@
                 </div>
             </div>
 
-            <!-- Juan -->
-            <div class="character-card card">
-                <img src="images/characters/JuanBeachHoldingGuavaCakes.png" alt="Juan">
-                <div class="card-content">
-                    <h3>Juan</h3>
-                    <p>The island's best tour guide and a wonderful father who leads the family on amazing adventures.</p>
-                </div>
-            </div>
-
-            <!-- Emilia -->
-            <div class="character-card card">
-                <img src="images/characters/EmiliaBoopingBobPaintedNails.png" alt="Emilia">
-                <div class="card-content">
-                    <h3>Emilia</h3>
-                    <p>A kind-hearted and sometimes nervous explorer who finds her courage with Bob by her side.</p>
-                </div>
-            </div>
-
-            <!-- Nico -->
+            <!-- Nico and Emilia (Middle) -->
             <div class="character-card card">
                 <img src="images/characters/NicoSlingshotGuavacakes.png" alt="Nico">
                 <div class="card-content">
@@ -59,9 +58,25 @@
                 </div>
             </div>
 
-            <!-- Daniella -->
             <div class="character-card card">
-                <div class="image-placeholder" style="border-radius: 50%; width: 150px; height: 150px; margin: 1rem auto; border: 5px solid var(--lizard-green);">Daniella</div>
+                <img src="images/characters/EmiliaBoopingBobPaintedNails.png" alt="Emilia">
+                <div class="card-content">
+                    <h3>Emilia</h3>
+                    <p>A kind-hearted and sometimes nervous explorer who finds her courage with Bob by her side.</p>
+                </div>
+            </div>
+
+            <!-- Juan and Daniella (Bottom) -->
+            <div class="character-card card">
+                <img src="images/characters/JuanBeachHoldingGuavaCakes.png" alt="Juan">
+                <div class="card-content">
+                    <h3>Juan</h3>
+                    <p>The island's best tour guide and a wonderful father who leads the family on amazing adventures.</p>
+                </div>
+            </div>
+
+            <div class="character-card card">
+                <img src="images/characters/Daniella.png" alt="Daniella">
                 <div class="card-content">
                     <h3>Daniella</h3>
                     <p>The owner of the island's newest and most delicious bakery. She makes the best guava treats!</p>
@@ -71,7 +86,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Guava Bob's Grande Adventures</p>
+        <p> 2026 Guava Bob's Grande Adventures</p>
     </footer>
 </body>
 </html>

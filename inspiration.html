@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inspiration - Guava Bob's Grande Adventures</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .inspiration-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 10px solid var(--guava-pink);
+        }
+        .inspiration-image {
+            max-width: 40%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .inspiration-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,15 +44,18 @@
 
     <main>
         <h1>Our Inspiration</h1>
-        <div class="bio-section">
-            <p>"I am a first time author based in Cary, North Carolina with my wife and two kids. While I work in Cyber Security as my day job, I play the ukulele and plan family vacations in the evening."</p>
-            <br>
-            <p>"I was inspired to write this series to encourage kids to be curious about the world around them, and I wanted to show that when you leave your comfort zones to try a new activity, fun often follows."</p>
+        <div class="inspiration-container">
+            <img src="images/characters/guavaBobREALPhoto.jpg" alt="The REAL Guava Bob" class="inspiration-image">
+            <div class="inspiration-text">
+                <p>On a family vacation to Liquillo Puerto Rico, the author opened the balcony to find an iguana resting in a palm tree above an orange sand beach. His kids were content to stay inside and watch one Mr Beast video after another in spite of the amazing activities just outside their door.</p>
+                <br>
+                <p>He told his wife that he felt like a tour guide who had to sell them on an adventure worthy of putting down their devices. To convince them to try some new activities, they bribed them with delicious tropical pastries from a bakery in Old San Juan which included guava cakes. During nightly bedtime stories on that wonderful island vacation, the idea for a guava eating lizard named Bob and his travel adventures came to life!</p>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Guava Bob's Grande Adventures</p>
+        <p> 2026 Guava Bob's Grande Adventures</p>
     </footer>
 </body>
 </html>
