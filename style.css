@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'cursive', sans-serif;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Trebuchet MS', sans-serif;
     background-color: var(--sand-tan);
     color: var(--tropical-dark);
     line-height: 1.6;
